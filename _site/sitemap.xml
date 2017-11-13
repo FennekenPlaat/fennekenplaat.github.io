@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>http://localhost:4000/blog/jaar-4/2017/11/13/Verslag-Jaar-4.html</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/blog/jaar-3/2017/11/13/Verslag-Jaar-3.html</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/blog/stages/2017/11/13/Stages.html</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/blog/jaar-2/2017/11/12/Verslag-Jaar-2.html</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/blog/jaar-1/2017/11/11/Verslag-Jaar-1.html</loc>
+    </url>
+
+
+    <url>
+        <loc>http://localhost:4000/404.html</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/blog/</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/static/css/custom.css</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/donate/</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/feed.xml</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/jaar-1/</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/jaar-2/</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/jaar-3/</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/jaar-4/</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/life/</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/robots.txt</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/search.json</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/sitemap.xml</loc>
+    </url>
+
+    <url>
+        <loc>http://localhost:4000/stages/</loc>
+    </url>
+
+</urlset>

@@ -1,0 +1,43 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name:
+    detail: Samen in de Sneeuw
+    i18n: company_a
+  desc:
+    detail: Stichting Samen in de Sneeuw gaat op wintersport met mensen met een verstandelijke beperking.
+    i18n: company_a_desc
+  date:
+    detail: Feb. 2018
+    i18n: company_a_date
+  job:
+    detail: Begeleider
+    i18n: company_a_job
+  icon: fa-plus-square
+
+- name:
+    detail: IFMSA-NL
+    i18n: company_b
+  desc:
+    detail: Tienerwijs, seksuele & relationele vorming in het basisonderwijs.
+    i18n: company_b_desc
+  date:
+    detail: Jun. 2017 - Heden
+    i18n: company_b_date
+  job:
+    detail: Voorlichter
+    i18n: company_b_job
+  icon: fa-plus-square
+
+- name:
+    detail: VINEA Jeugdvakanties
+    i18n: company_c
+  desc:
+    detail: Zomerkampen leeftijden 12 tm 16 jaar.
+    i18n: company_c_desc
+  date:
+    detail: Jun. 2017 - Heden
+    i18n: company_c_date
+  job:
+    detail: Reisleider
+    i18n: company_c_job
+  icon: fa-plus-square
