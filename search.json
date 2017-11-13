@@ -1,12 +1,17 @@
+---
+layout: null
+---
 {
     "code" : 0 ,
     "data" : [
-     
+     {% for post in site.posts %}
     {
-        "title" : "Jaar 1 - 2017-01-02",
-        "url" : "/home/blog/jaar-1/2017/01/02/Verslag-Jaar-1.html"
+        "title" : "{{ post.title }} - {{ post.date | date_to_utc | date: '%Y-%m-%d'}}",
+        "url" : "{{ site.baseurl }}{{ post.url }}"
     }
-    
-    
+    {% if forloop.rindex != 1  %}
+    ,
+    {% endif %}
+    {% endfor %}
     ]
 }

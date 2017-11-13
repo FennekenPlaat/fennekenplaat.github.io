@@ -1,69 +1,17 @@
+---
+layout: null
+title : Sitemap
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+{% for post in site.posts %}
     <url>
-        <loc>https://fennekenplaat.github.io/home/blog/jaar-1/2017/01/02/Verslag-Jaar-1.html</loc>
+        <loc>{{site.url}}{{ post.url }}</loc>
     </url>
-
-
+{% endfor %}
+{% for page in site.pages %}
     <url>
-        <loc>https://fennekenplaat.github.io/home/404.html</loc>
+        <loc>{{site.url}}{{ page.url }}</loc>
     </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/blog/</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/static/css/custom.css</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/donate/</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/feed.xml</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/jaar-1/</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/jaar-2/</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/jaar-3/</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/jaar-4/</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/life/</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/robots.txt</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/search.json</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/sitemap.xml</loc>
-    </url>
-
-    <url>
-        <loc>https://fennekenplaat.github.io/home/stages/</loc>
-    </url>
-
+{% endfor %}
 </urlset>

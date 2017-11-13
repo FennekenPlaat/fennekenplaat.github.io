@@ -1,51 +1,30 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fenneken Plaat | Zorgprofessional</title>
-    <description>Fenneken's blog, portfolio en meer.</description>
-    <link>https://fennekenplaat.github.io/home/home/</link>
-    <atom:link href="https://fennekenplaat.github.io/home/home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Nov 2017 17:22:50 +0100</pubDate>
-    <lastBuildDate>Mon, 13 Nov 2017 17:22:50 +0100</lastBuildDate>
-    <generator>Jekyll v3.6.2</generator>
-    
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts %}
       <item>
-        <title>Jaar 1</title>
-        <description>&lt;h1 id=&quot;jaar-1&quot;&gt;Jaar 1&lt;/h1&gt;
-
-&lt;h2 id=&quot;beginsituatie&quot;&gt;Beginsituatie&lt;/h2&gt;
-&lt;p&gt;Mijn eerste bijbaantje tijdens de middelbare school was in een verzorgingstehuis. In eerste instantie werkte ik in de keuken, later werd ik ook ingezet in de bediening. Dit was mijn eerste ervaring met de zorg. Ik merkte meteen dat ik het contact met de mensen het leukste van het werk vond. Ik heb toen nog geen moment gedacht om echt de verpleging in te gaan, maar toen ik eenmaal de keuze had gemaakt dacht ik wel terug aan dit moment.&lt;/p&gt;
-
-&lt;h2 id=&quot;voortgang&quot;&gt;Voortgang&lt;/h2&gt;
-&lt;p&gt;Tijdens het eerste schooljaar stond de basiszorg en het opdoen van medische basiskennis centraal. Het maken en gebruiken van een verpleegplan werd behandeld met de lessen Klinisch Redeneren. Verpleegtechnische basishandelingen met de achterliggende theorie zijn behandeld. Het verzorgen (bijvoorbeeld wassen van de patiënt) en begeleiden van niet-complexe zorgvragers heb ik behaald tot het niveau van zelfstandigheid.&lt;/p&gt;
-
-&lt;p&gt;Mijn eerste stage heb ik gelopen bij verzorgtehuis Eben Hëazer in Amsterdam zuidoost. Ik werd al snel losgelaten, ook al wist ik nog heel weinig. Achteraf heb ik hier dan ook niet altijd zorg verleent waar ik trots op was. Ik werd meegetrokken met de verzorgers in het tehuis en stond nog niet sterk genoeg in mijn schoenen om vraagtekens bij de zorg te zetten die verleend werd. 
-Hoewel de begeleiding dus wat te wensen over liet, heb ik er ontzettend veel van geleerd. De theorie van de VTV lessen op school heb ik hier in de praktijk gebracht. Door heel veel ADL te verlenen heb ik hier basisvaardigheden geleerd waar ik in alle volgende stages op door kon borduren.&lt;/p&gt;
-
-&lt;p&gt;Zoals te zien is in de competentiematrix ben ik in het eerste jaar gegroeid van Niveau 1, F1 naar Niveau 2, F1.&lt;/p&gt;
-
-&lt;h2 id=&quot;bewijzen--documenten&quot;&gt;Bewijzen | Documenten&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://fennekenplaat.github.io/home/download/&amp;quot;Beroepsgericht schrijven definitief.docx&amp;quot;&quot;&gt;Stageverslag jaar 1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;SLB beroepsgericht schrijven: Artikel “Het brein als medicijn”&lt;/li&gt;
-  &lt;li&gt;Leerverslag OWG/MPB&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 02 Jan 2017 00:00:00 +0100</pubDate>
-        <link>https://fennekenplaat.github.io/home/home/blog/jaar-1/2017/01/02/Verslag-Jaar-1.html</link>
-        <guid isPermaLink="true">https://fennekenplaat.github.io/home/home/blog/jaar-1/2017/01/02/Verslag-Jaar-1.html</guid>
-        
-        <category>blog</category>
-        
-        <category>Jaar-1</category>
-        
-        
-        <category>blog</category>
-        
-        <category>Jaar-1</category>
-        
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
       </item>
-    
+    {% endfor %}
   </channel>
 </rss>
