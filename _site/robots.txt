@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: <https://fennekenplaat.github.io/home/sitemap.xml>
